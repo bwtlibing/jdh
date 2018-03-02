@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>订单支付</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="page-view-size" content="1280*720">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="../../css/global/alert.css">
+    <link rel="stylesheet" href="../../css/order-pay.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 720px;
+            width: 1280px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <!--头部-->
+    <div class="header">
+        <img style="position: absolute ; left: 130px; top: 63px;  width: 65px;height: 50px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ; left: 204px; top: 60px;  width: 100px;height: 35px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p class="title"  style="position: absolute ; left: 395px; top:82px;  width: 110px;height: 35px; color: white;font-size: 26px">订单支付</p>
+        <p style="position: absolute;left: 204px; top: 92px; height:30px;line-height: 30px;width: 248px;color: white">
+            客服电话：12345678</p>
+        <marquee style="position: absolute;right: 200px; top: 85px; width: 245px; height: 32px;line-height: 34px ;color: white"
+                 scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+        <img class="menu-item" src="../../img/user.png" style="position: absolute;right: 130px; top: 68px;  width: 55px;height: 50px;"
+             alt="">
+    </div>
+
+    <!--内容区-->
+    <div class="payInfo-box"><!--支付信息-->
+
+        <!--左侧信息-->
+        <div class="left-pay-ways">
+            <p class="order-money" >
+                <span>订单金额：</span>
+                <span id="order-amount"></span>
+            </p>
+            <p class="title">支付方式</p>
+            <p class="title-tip">(请您在<span class="time-tip">24小时</span>内完成支付)</p>
+            <!--否则订单会被自动取消-->
+            <ul class="payWay-list">
+                <li id="best-pay" class="menu-item">
+                    <img src="../../img/order-img/yiShangCheng.jpg" alt="">
+                    <span class="youHui" id="yizhifu" style="display: none">优惠<span id="bestAllowance"></span>元</span>
+                </li>
+                <li id="WeChat-pay" class="menu-item">
+                    <img src="../../img/order-img/weiXin.jpg" alt="">
+                    <span class="youHui" id="weiXin" style="display: none">优惠<span id="weixinAllowance"></span>元</span>
+                </li>
+                <li id="ali-pay" class="menu-item">
+                    <img src="../../img/order-img/zhiFuBao.jpg" alt="">
+                    <span class="youHui" id="zhiFuBao" style="display: none">优惠<span id="zhifubaoAllowance"></span>元</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--右侧二维码显示区-->
+        <div class="right-QRcode-box">
+            <p class="pay-tip">
+                <img src="../../img/order-img/successPay.png" alt="">
+                <span>您的订单已提交成功，请扫描下方二维码完成支付。</span>
+            </p>
+            <div class="wrap">
+                <img id="QRcode-img" src="../../img/order-img/QRcode.png" alt="">
+                <p class="pay-name">翼支付</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+        </div>
+    </div>
+</div>
+
+<script src="../../js/public/Util.js"></script>
+<script src="../../js/order-pay.js"></script>
+
+</body>
+</html>

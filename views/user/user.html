@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>用户中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="page-view-size" content="1280*720">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="../../css/global/alert.css">
+    <link rel="stylesheet" href="../../css/user.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 720px;
+            width: 1280px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <!--头部-->
+    <div class="header">
+        <img style="position: absolute ; left: 130px; top: 63px;  width: 65px;height: 50px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ; left: 204px; top: 60px;  width: 100px;height: 35px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p class="title"  style="position: absolute ; left: 395px; top:82px;  width: 110px;height: 35px; color: white;font-size: 26px">用户中心</p>
+        <p style="position: absolute;left: 204px; top: 92px; height:30px;line-height: 30px;width: 248px;color: white">
+            客服电话：12345678</p>
+        <marquee style="position: absolute;right: 200px; top: 85px; width: 245px; height: 32px;line-height: 34px ;color: white"
+                 scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+        <img class="menu-item" src="../../img/home.png" style="position: absolute;right: 130px; top: 68px;  width: 55px;height: 50px;"
+             alt="">
+    </div>
+
+    <!--用户信息部分-->
+    <div class="user-box">
+
+        <div class="user-info"><!--头部的id手机号-->
+            <div class="left">
+                <img src="../../img/user-img/userHeader.png" alt="">
+                <div class="idPhone">
+                    <p class="sx-title">
+                        <span>陕西翼支付</span>
+                        <!--<span></span>-->
+                    </p>
+                    <p class="phoneNum">
+                        <img src="../../img/user-img/phone.png" alt="">
+                        <span id="phoneNum"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="user-QRcode">
+                <img id="user-QRcode" src="" alt="">
+                <p>扫码获取更多用户信息~</p>
+            </div>
+
+        </div>
+
+        <!--用户订单、收藏部分-->
+        <div class="order-collect-box">
+            <div class="left-order">
+                <div class="title-tip">
+                    <img src="../../img/user-img/order.png" alt="">
+                    <span>我的订单</span>
+                </div>
+
+                <ul class="order-list" id="order-ul" >
+                    <!--<li class="order-list-li order-item" >
+                        <p>
+                            <span class="time">2017-09-08 16:34:34</span>
+                            <span class="order-status">订单状态：<strong>待付款</strong></span>
+                            <span class="goods-num"><span class="orderProductName">全家桶</span>X<span class="quantity">1</span></span>
+                        </p>
+                        <p>
+                            <span class="order-id">订单号：<strong id="order-num1">123123213213</strong></span>
+                            <span class="order-money">订单总额：<strong class="orderAmount">￥99.00</strong></span>
+                        </p>
+                    </li>
+                    <li class="order-list-li order-item" >
+                        <p>
+                            <span class="time">2017-09-08 16:34:34</span>
+                            <span class="order-status">订单状态：<strong>待商家发货</strong></span>
+                            <span class="goods-num"><span class="orderProductName">全家桶</span>X<span class="quantity">1</span></span>
+                        </p>
+                        <p>
+                            <span class="order-id">订单号：<strong id="order-num2">123123213213</strong></span>
+                            <span class="order-money">订单总额：<strong class="orderAmount">￥99.00</strong></span>
+                        </p>
+
+                    </li>
+                    <li class="order-list-li order-item" >
+                        <p>
+                            <span class="time">2017-09-08 16:34:34</span>
+                            <span class="order-status">订单状态：<strong>待商家发货</strong></span>
+                            <span class="goods-num"><span class="orderProductName">全家桶</span>X<span class="quantity">1</span></span>
+                        </p>
+                        <p>
+                            <span class="order-id">订单号：<strong id="order-num3">123123213213</strong></span>
+                            <span class="order-money">订单总额：<strong class="orderAmount">￥99.00</strong></span>
+                        </p>
+                    </li>-->
+                </ul>
+                <div class="tip-box order-tip"><img class="tip-Img" src="../../img/user-img/meiYouJiLu.png" alt=""></div>
+                <!--底部翻页-->
+                <div class="page-turn">
+                    <p>
+                        <span class="up-page menu-item">上一页</span>
+                        <span class="middle">第<span id="orderPage" class="current-page">1</span>页</span>
+                        <span class="down-page menu-item">下一页</span>
+                    </p>
+                </div>
+            </div>
+
+            <!--右部分收藏-->
+            <div class="right-collect">
+                <div class="title-tip">
+                    <img src="../../img/user-img/collect.png" alt="">
+                    <span>我的收藏</span>
+                </div>
+                <ul class="order-list" id="collect-ul" >
+                    <!--<li class="collect-list  collect-item" >
+                        <img class="productImage" src="img/user-img/goodsShow.png" alt="">
+                        <div>
+                            <p class="productName">肯德基</p>
+                            <p class="collect-time">2017-09-08 18:15:20</p>
+                        </div>
+                    </li>
+                   <li class="collect-list collect-item" >
+                        <img class="productImage" src="img/user-img/goodsShow.png" alt="">
+                        <div>
+                            <p class="productName">肯德基</p>
+                            <p class="collect-time">2017-09-08 18:15:20</p>
+                        </div>
+                    </li>
+                     <li class="collect-list  collect-item" >
+                        <img class="productImage" src="img/user-img/goodsShow.png" alt="">
+                        <div>
+                            <p class="productName">肯德基</p>
+                            <p class="collect-time">2017-09-08 18:15:20</p>
+                        </div>
+                    </li>-->
+                </ul>
+                <div class="tip-box collect-tip"><img class="tip-Img" src="../../img/user-img/meiYouJiLu.png" alt=""></div>
+                <!--底部翻页-->
+                <div class="page-turn">
+                    <p>
+                        <span class="up-page menu-item">上一页</span>
+                        <span class="middle">第<span id="collectPage" class="current-page">1</span>页</span>
+                        <span class="down-page menu-item">下一页</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--提示信息弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+        </div>
+    </div>
+</div>
+
+<script src="../../js/public/Util.js"></script>
+<script src="../../js/user.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+/*翼支付*/
+.contentUp{
+    position: absolute;
+    top:140px;
+    left: 130px;
+    background: #eff2fb;
+    width: 1018px;
+    height: 278px;
+}
+.introduce {
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    width: 382px;
+    height: 226px;
+
+}
+
+/*中部六个消费模块区*/
+.modules{
+    position: absolute;
+    top: 25px;
+    left: 402px;
+    width: 412px;
+    height: 226px;
+    background: white;
+}
+.modules p{
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    padding: 5px 7px;
+    border-right: 1px solid #d7d7d7;
+    text-align: center;
+    font-size: 16px;
+}
+.modules .lastImg{
+    border-right: 0 solid #d7d7d7;
+}
+.modules p img{
+    width: 45px;
+    height: 45px;
+}
+.modules p span{
+    display: block;
+    margin-top: 5px;
+}
+.modules .textDes{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 392px;
+    height: 64px;
+    color: white;
+    font-size: 16px;
+    background: #979fc6;
+    padding: 10px;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+
+/*右部二维码区*/
+.QRcode{
+    position: absolute;
+    top: 25px;
+    left: 822px;
+    width: 184px;
+    height: 226px;
+    background: white;
+}
+.QRcode img{
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    width: 120px;
+    height: 120px;
+}
+.QRcode .textTip{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 164px;
+    height: 64px;
+    color: black;
+    font-size: 16px;
+    background: #e4e0df;
+    padding: 10px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: center;
+}
+/*下半部分*/
+.contentDown{
+    position: absolute;
+    top:434px;
+    left: 130px;
+    background: #eff2fb;
+    width: 1018px;
+    height: 220px;
+}
+.contentDown .name{
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    background: #959fc6;
+    color: white;
+    text-indent: 2rem;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.contentDown .partners{
+    position: absolute;
+    top: 79px;
+    left: 28px;
+    width: 960px;
+    height: 90px;
+}
+.contentDown .partners img{
+    width: 155px;
+    height: 90px;
+    margin-right: 10px;
+}
+.contentDown .partners #watch-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 64px;
+    height: 54px;
+    background: #8944a2;
+    color: white;
+    padding: 10px 15px 20px;
+    text-align: center;
+}
+.contentDown .partners #watch-more p {
+   font-size: 24px;
+}

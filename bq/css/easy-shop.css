@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    border: 1px solid red;
+}
+.content{
+    padding: 20px 60px 40px 60px;
+}
+/*头部样式*/
+.header{
+    /*border: 1px solid red;*/
+}
+.header .logo{
+    float: left;
+}
+.header .logo img{
+    width: 178px;
+    height:65px;
+}
+.header .go-back{
+    text-align: center;
+    float: right;
+    color: white;
+    background-color: #169bd5;
+    width: 180px;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+.header:after {
+    content: '';
+    display: block;
+    clear: both;
+    width:0;
+    height:0;
+    visibility:hidden;
+}
+
+/*菜单列表样式*/
+.menu-box {
+    /*border: 1px solid red;*/
+    margin-top: 30px;
+}
+.menu-box .menu-list {
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-box .menu-list li{
+    text-align: center;
+    background-color: #169bd5;
+    width: 200px;
+    line-height: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+
+
+/*商品推荐位*/
+.Featured{
+    margin-top: 20px;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    flex-direction: row;
+    justify-content: space-between;
+    width:100% ;
+    /*border: 1px solid red;*/
+}
+.Featured img{
+    border: 1px solid ;
+}
+.Featured .Featured-left{
+    width: 18%;
+    /*border: 1px solid red;*/
+}
+.Featured .Featured-left img{
+    display: block;
+    width: 100%;
+}
+.Featured .Featured-left img:last-child{
+    margin-top: 20px;
+}
+
+.Featured  .Featured-middle{
+    /*border: 1px solid red;*/
+    width: 18%;
+}
+.Featured .Featured-middle img{
+    display: block;
+    width: 100%;
+}
+.Featured .Featured-right{
+    /*border: 1px solid red;*/
+    width: 60%;
+}
+
+.Featured .Featured-right .Featured-right-up{
+    margin-bottom: 10px;
+}
+.Featured .Featured-right p{
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+.Featured .Featured-right  ul{
+    list-style: none;
+}
+.Featured .Featured-right  ul li{
+    display: inline-block;
+    margin-right: 2%;
+    width: 22%;
+    /*border: 1px solid red;*/
+}
+.Featured .Featured-right  ul li img{
+   width: 100%;
+}
+.Featured .Featured-right  ul li:last-child{
+    margin-right: 0;
+}
+.Featured .Featured-right  ul li:nth-child(3){
+    margin-right: 3%;
+}
+
+
+
+
+/*底部样式*/
+
+.footer{
+    /*border: 1px solid teal;*/
+    margin-top: 30px;
+}
+.footer:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer .footer-left{
+
+    float: left;
+}
+.footer .footer-left #user-id{
+    margin-right: 80px;
+}
+.footer .footer-left #user-id ,.footer .footer-left .activity-info{
+    display: inline-block;
+}
+.footer .footer-left .activity-info{
+    /*border: 1px solid red;*/
+}
+.footer .footer-left .activity-info p img{
+    vertical-align: bottom;
+}
+.footer .footer-left .activity-info p marquee{
+    width: 300px;
+    height: 20px;
+}
+.footer .footer-right{
+    font-size: 18px;
+    float: right;
+}
+
+
+
+
+

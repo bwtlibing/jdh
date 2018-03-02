@@ -1,0 +1,27 @@
+
+.alertModal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.7);
+}
+.alert-modal-content{
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: 200px auto;
+    border-radius:10px;
+    overflow: auto;
+    background: url("../../img/alert.png") no-repeat;
+    background-size: 100% 100%;
+
+    text-align: center;
+}
+.alert-modal-content .detailInfo{
+
+    padding: 220px 40px 80px;
+    font-size: 26px;
+}

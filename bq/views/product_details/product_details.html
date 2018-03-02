@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>商品详情页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="page-view-size" content="640*530">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <!--<link rel="stylesheet" href="css/product-details.css">-->
+    <link rel="stylesheet" href="../../css/global/alert.css">
+    <link rel="stylesheet" href="../../css/product-details.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 530px;
+            width: 640px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <!--头部-->
+    <div class="header">
+        <img style="position: absolute ; left: 60px; top: 26px;  width: 33px;height: 40px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ;  left: 100px; top: 25px;  width: 50px;height: 25px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p class="title"  style="position: absolute ; left: 280px; top:42px;  width: 50px;height: 28px; color: white;font-size: 22px">商品</p>
+        <p style="position: absolute;left: 100px; top: 51px; height:21px;line-height: 21px;width: 220px;color: white">
+            客服电话：12345678</p>
+        <marquee
+                style="position: absolute;right: 105px; top: 45px; width: 160px; height: 23px;line-height: 23px ;color: white"
+                scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+        <img class="menu-item" src="../../img/user.png" style="position: absolute;right: 65px; top: 30px;  width: 28px;height: 36px;"
+             alt="">
+    </div>
+    <!--内容区-->
+
+
+    <div class="product-show-left"><!--左侧商品照片展示-->
+
+        <div class="product-img-area">
+            <div class="big-img-box  menu-item"  >
+                <iframe id="plyIfr" name="plyIfr" src=""  scrolling="no" frameborder="0"></iframe>
+                <img class="img-item " id="bigImg" style="display: none" src="../../img/noProduct.png" alt="">
+            </div>
+            <div class="small-img-box">
+                <div id="small-img-container" >
+                    <!--<img class="img-item menu-item small-img" src="../../img/noProduct.png" alt="">
+                    <img class="img-item menu-item small-img" src="../../img/noProduct.png" alt="">
+                    <img class="img-item menu-item small-img" src="../../img/noProduct.png" alt="">
+                    <img class="img-item menu-item small-img" src="../../img/noProduct.png" alt="">
+                    <img class="img-item menu-item small-img" src="../../img/noProduct.png" alt="">
+                    <img class="img-item menu-item small-img" src="../../img/noProduct.png" alt="">-->
+                </div>
+            </div>
+        </div>
+        <!--卖家-->
+        <div class="product-description-area" id="seller" style="display: none">
+            <p class="shops menu-item">
+                <!--<span>商家：</span>-->
+                <img id="sellerImage" src="../../img/product-details-img/dianPu.png" alt="">
+                <span id="sellerName" class="shops-name"></span>
+            </p>
+        </div>
+    </div>
+    <!--右侧商品详情展示-->
+    <div class="product-details-right">
+
+        <!--商品名称-->
+        <div class="product-name-box">
+            <div class="name-header">
+                <p class="product-name">
+                    <span id="productName"></span>
+                </p>
+
+                <p class="product-sales-volume">
+                    <span>销量</span>
+                    <span id="salesVolumn"></span>
+                </p>
+
+            </div>
+            <div class="promotion-info">
+                <p id="description"></p>
+            </div>
+        </div>
+
+        <div class="product-active"><!--商品价格活动部分-->
+            <div class="product-price">
+                <p><span>商城活动价:</span><span class="product-price-num">￥<span id="realPrice"></span></span> </p>
+                <p><span>市场参考价:￥</span><del id="marketPrice"></del></p>
+            </div>
+
+            <div id="discount-activity" class="discount-activity">
+                <span>活&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;动：</span>
+                <ul id="activeUl">
+                    <!--<li class="activityList">单品8折</li>
+                    <li class="activityList">翼支付</li>
+                    <li class="activityList">翼支付减免3元</li>-->
+                </ul>
+            </div>
+        </div>
+
+        <div class="product-introduce-box"><!--商品介绍及配送介绍-->
+            <div class="product-introduce">
+                <span>商品介绍:</span>
+                <p id="detail"></p>
+            </div>
+            <!-- <div class="product-distribution">
+                 <span>配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送:</span>
+                 <p>发的郭德纲梵蒂冈梵蒂冈地方冈地方就看了看发动机管定发给换个梵蒂冈的发的郭德纲梵蒂冈梵蒂梵蒂冈的</p>
+             </div>-->
+        </div>
+        <div class="btns-box">
+            <div class="btns">
+                <div class="order-btn menu-item">
+                    <img src="../../img/product-details-img/order-btn.png" alt="">
+                </div>
+                <div class="collect-btn menu-item">
+                    <img id="collectImg" src="../../img/product-details-img/shouCang.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+
+        </div>
+    </div>
+</div>
+<script  src="../../js/public/Util.js"></script>
+<script  src="../../js/public/video.js"></script>
+<script  src="../../js/product-details.js"></script>
+</body>
+</html>

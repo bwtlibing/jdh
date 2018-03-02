@@ -1,0 +1,279 @@
+
+
+/*头部加小标题*/
+.header .title span{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    vertical-align: top;
+    margin-left: 3%;
+}
+/*商品推荐位*/
+.Featured{
+    margin-top: 1%;
+    position: relative;
+}
+
+/*左边部分*/
+.Featured .Featured-left{
+    display: inline-block;
+    width: 16%;
+    vertical-align: top;
+}
+.Featured .Featured-left .menu-list{
+    list-style: none;
+}
+.Featured .Featured-left .menu-list li{
+    height: auto;
+    margin-bottom: 32px;
+}
+.Featured .Featured-left .menu-list li:last-child{
+    margin-bottom: 15px;
+    /*border: 1px solid red;*/
+}
+.Featured .Featured-left .menu-list li img{
+    width: 100%;
+}
+
+/*---------absolute定位方式---------------*/
+/*右边部分*/
+.Featured .Featured-right{
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    right: 0;
+    width: 81%;
+    margin-left: 2%;
+}
+/*右边的左侧部分*/
+.Featured .Featured-right .Featured-rightLeft{
+    position: absolute;
+    width: 42%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*推荐位轮播开始*/
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show{
+    position: relative;
+    height: 232px;
+}
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show .list {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show .list li{
+    position: absolute;
+    width: 100%;
+}
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show .list li img{
+    width: 100%;
+    height: 228px;
+    opacity: 0;
+    transition: all 2s;
+}
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show .btn {
+    position: absolute;
+    list-style: none;
+    bottom:5%;
+    right: 10%;
+    width: 100%;
+    text-align: right;
+    margin-right: 10%;
+}
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show .btn li{
+    display: inline-block;
+    color: white;
+    width: 10px;
+    height: 10px;
+    margin-right: 2%;
+    background-color: darkgray;
+    border-radius: 50%;
+}
+.Featured .Featured-right .Featured-rightLeft .Featured-middle-up .slide-show .btn .active{
+    background-color:white ;
+}
+/*推荐位轮播结束*/
+/*--------中间底部----------*/
+.Featured .Featured-right .Featured-middle-down{
+    width: 100%;
+    position: relative;
+    margin-top: 4%;
+}
+.Featured .Featured-right .Featured-middle-down div {
+    width: 48%;
+    position: absolute;
+}
+
+.Featured .Featured-right .Featured-middle-down div img {
+    width: 183px;
+    height: 280px;
+}
+.Featured .Featured-right .Featured-middle-down div:nth-child(1){
+    left: 0;
+}
+.Featured .Featured-right .Featured-middle-down div:nth-child(2){
+    right: 0;
+}
+/*右边部分的右侧样式*/
+.Featured .Featured-right .Featured-rightRight{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width:56.0% ;
+
+}
+.Featured .Featured-right  .Featured-right-up{
+    width: 510px;
+    height: 286px;
+}
+.Featured  .Featured-right  .Featured-right-up video{
+    width: 505px;
+    height: 278px;
+}
+
+.Featured .Featured-right  .Featured-right-down{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+/*----------到此结束----------*/
+
+/*absolute绝对定位*/
+.Featured .Featured-right  .Featured-right-down div{
+    position: absolute;
+    width: 31%;
+}
+.Featured .Featured-right  .Featured-right-down div img{
+    width: 158px;
+    height: 228px;
+}
+.Featured .Featured-right  .Featured-right-down div:nth-child(1){
+    left: 0;
+}
+.Featured .Featured-right  .Featured-right-down div:nth-child(2){
+    left: 34%;
+}
+.Featured .Featured-right  .Featured-right-down div:nth-child(3){
+    right: -0.5%;
+}
+/*右边部分的其他样式*/
+.Featured .another{
+    padding-top: 1%;
+    width: 81.5%;
+    margin-left: 2%;
+    display: none;
+}
+.Featured .another ul li{
+    position: relative;
+    display: inline-block;
+    width: 205px;
+    height: 205px;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+/*商品图片展示信息*/
+.Featured .another ul li .product-info{
+    position: absolute;
+    background: white;
+    height: 38px;
+    line-height: 38px;
+    bottom: 0;
+    width: 100%;
+}
+.Featured .another ul li .product-info .product-name{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.Featured .another ul li .product-info .product-price{
+    text-align: right;
+    margin-right: 10px;
+    color: red;
+    font-size: 16px;
+    float: right;
+}
+.Featured .another ul li .top-img{
+    position: absolute;
+    display: none;
+    right: 0;
+    top:0;
+    width: 50px;
+    height: 50px;
+}
+/*-------结束-------*/
+.Featured .another ul li:nth-child(4){
+    margin-right: 0;
+}
+.Featured .another ul li:nth-child(8){
+    margin-right: 0;
+}
+.Featured .another ul li img{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+/*翻页的样式*/
+.page-turn{
+    text-align: right;
+}
+.page-turn span {
+    text-align: center;
+    margin-right: 1%;
+}
+.page-turn .up-page ,.page-turn .down-page{
+    background-color: #169bd5;
+    padding: 0.8% 1.6%;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    font-size: 22px;
+}
+.page-turn .middle{
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+}
+.page-turn  .current-page{
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-right: 0;
+}
+/*底部样式*/
+.footer{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    text-shadow: -1px 4px 1px black;
+}
+.footer .footer-left {
+    position: absolute;
+    left: 0;
+    width: 80%;
+}
+.footer .footer-left .activity-info p img{
+    vertical-align: bottom;
+    width: 7%;
+}
+.footer .footer-left .activity-info p marquee{
+    width: 300px;
+    height:30px;
+    margin-left: 1%;
+    vertical-align: top;
+}
+.footer .footer-right{
+    position: absolute;
+    right: 0;
+}
+#bigImg{
+    width: 504px;
+    height: 278px;
+}
+
+
+
+
+

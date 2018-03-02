@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>订单详情页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="page-view-size" content="1280*720">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="../../css/global/alert.css">
+    <link rel="stylesheet" href="../../css/order-detail.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 720px;
+            width: 1280px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+        .order-box{
+            background: #f0f2fa;
+            width: 1018px;
+            height: 506px;
+            position: absolute;
+            left: 130px;
+            top: 130px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <!--头部-->
+    <div class="header">
+        <img style="position: absolute ; left: 130px; top: 52px;  width: 65px;height: 50px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ; left: 204px; top: 50px;  width: 100px;height: 35px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p class="title"  style="position: absolute ; left: 395px; top:72px;  width: 110px;height: 35px; color: white;font-size: 26px">订单详情</p>
+        <p style="position: absolute;left: 204px; top: 82px; height:30px;line-height: 30px;width: 248px;color: white">
+            客服电话：12345678</p>
+        <marquee
+                style="position: absolute;right: 200px; top: 75px; width: 245px; height: 32px;line-height: 34px ;color: white"
+                scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+
+        <img class="menu-item" src="../../img/user.png" style="position: absolute;right: 130px; top: 58px;  width: 55px;height: 50px;"
+             alt="">
+    </div>
+
+    <!--订单详情盒子-->
+    <div class="order-box"><!--具体下单的信息-->
+        <div class="left-orderInfo"><!--左侧订单信息-->
+            <div class="left-up">
+                <p class="orderInfo">
+                    <img src="../../img/order-img/orderNum.png" alt="">
+                    <span>订单信息</span>
+                </p>
+                <ul >
+                    <li class="order-number">
+                        <span>订单号:</span>
+                        <span id="order-number"></span>
+                    </li>
+                    <li class="order-status">
+                        <span>订单状态：</span>
+                        <span id="order-status"></span>
+                    </li>
+                    <li class="order-amount">
+                        <span>订单总额：</span>
+                        <span id="order-amount"></span>
+                    </li>
+                    <li class="order-time">
+                        <span>下单时间：</span>
+                        <span id="order-time-day"></span>
+                        <!--<span id="order-time-hours">18:15:00</span>-->
+                    </li>
+                </ul>
+                <div  id="payment-btn-box" class="payment-box" ><!--付款的按钮框-->
+                    <p class="pay-btn">
+                        <span id="payBtn" class="">付款</span>
+                        <span id="cancelBtn" class="">取消</span>
+                    </p>
+                    <p class="surplus-time">
+                        <span>剩余：</span><span id="hour"></span><span id="minute"></span>
+                    </p>
+                    <p class="order-tip">该订单会为您保留24.0小时(从下单之日算起),24.0小时之后如果还未付款，系统将自动取消该订单。</p>
+                </div>
+            </div>
+            <div class="left-down">
+                <table cellspacing="1">
+                    <thead>
+                    <tr>
+                        <th>
+                            <img src="../../img/order-img/product.png" alt="">
+                            <span>商品</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/price.png" alt="">
+                            <span>单价（元）</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/num.png" alt="">
+                            <span> 数量（个）</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/discount.png" alt="">
+                            <span>折扣</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <img id="productImage" src="../../img/noProduct.png" alt=""><span style="font-size: 16px; display: inline-block;width: 140px;vertical-align: middle; text-align: center" id="productName"></span>
+                        </td>
+                        <td id="price"></td>
+                        <td id="ProductNum">
+
+                        </td>
+                        <td id="discountName"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!--右侧的收货人信息，付款信息，物流信息-->
+        <div class="right-anotherInfo">
+            <!--收货人信息-->
+            <div id="receiver-info">
+                <p class="info-title">
+                    <img src="../../img/order-img/touXiang.png" alt="">
+                    <span >收货人信息</span>
+                </p>
+                <div class="detail-info">
+                    <p>
+                        <span>收货人：</span>
+                        <span id="consigneeName"></span>
+                    </p>
+                    <p>
+                        <span>地&nbsp;&nbsp;&nbsp;址：</span>
+                        <span id="consigneeAddress"></span>
+                    </p>
+                    <p>
+                        <span>手机号：</span>
+                        <span id="consigneePhone"></span>
+                    </p>
+                </div>
+
+
+            </div>
+            <!--付款信息-->
+            <div id="pay-info">
+                <p class="info-title">
+                    <img src="../../img/order-img/payment.png" alt="">
+                    <span>付款信息</span>
+                </p>
+
+                <div class="detail-info">
+                    <p>
+                        <span>商品金额：</span>
+                        <span id="produceFee"></span>
+                    </p>
+                    <p>
+                        <span style="letter-spacing: 3.2px">折&nbsp;&nbsp;&nbsp;&nbsp;扣：</span>
+                        <span id="discountAmount"></span>
+                    </p>
+                    <p>
+                        <span style="letter-spacing: 3.2px">运&nbsp;&nbsp;&nbsp;&nbsp;费：</span>
+                        <span id="freit"></span>
+                    </p>
+                    <p>
+                        <span>支付优惠：</span>
+                        <span id="payAllowance"></span>
+                    </p>
+                    <p>
+                        <span>订单总额：</span>
+                        <span id="realPayAmount"></span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!--物流信息-->
+            <div id="logistics-info" >
+                <p class="info-title">
+                    <img src="../../img/order-img/wuLiu.png" alt="">
+                    <span>物流信息</span>
+                </p>
+                <div class="detail-info">
+                    <p>
+                        <span>快递公司：</span>
+                        <span id="expressCompany"></span>
+                    </p>
+                    <p>
+                        <span >快递单号：</span>
+                        <span id="ExpressNumber"></span>
+                    </p>
+
+                    <div id="query-delivery"><!--查询配送信息-->
+                        <span  id="queryDistBtn">查询配送信息</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--物流弹出框-->
+<div id="modal"  class="modal" style="display: none">
+    <div class="modal-content">
+        <p class="modal_title">物流信息</p>
+        <ul id="expressUl">
+
+        </ul>
+        <div id="modalFooter"></div>
+    </div>
+</div>
+<!--提示信息弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+        </div>
+    </div>
+</div>
+
+<script src="../../js/public/Util.js"></script>
+<script src="../../js/order-detail.js"></script>
+</body>
+</html>

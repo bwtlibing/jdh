@@ -1,0 +1,315 @@
+
+/*左侧的订单信息*/
+
+.left-orderInfo .left-up{
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 600px;
+    height: 188px;
+    background: white;
+    color: #5F5F5F;
+}
+.left-orderInfo .left-up .orderInfo{
+    position: absolute;
+    width: 138px;
+    background: #aebbc3;
+    color: white;
+    height: 34px;
+    border-bottom: 3px solid #7e94ce;
+}
+.left-orderInfo .left-up .orderInfo img{
+    position: absolute;
+    width: 20px;
+    height: 22.5px;
+    left: 20px;
+    top: 6px;
+}
+.left-orderInfo .left-up .orderInfo span{
+    vertical-align: middle;
+    font-size:16px;
+    position: absolute;
+    left: 50px;
+    top: 6px;
+}
+.left-orderInfo .left-up ul{
+    position: absolute;
+    left: 47px;
+    top: 40px;
+    list-style: none;
+    width: 270px;
+    height: 126px;
+    font-size: 16px;
+    vertical-align: top;
+}
+.left-orderInfo .left-up ul li{
+    border-bottom: 1px solid darkgray;
+    height: 34px;
+    line-height: 34px;
+}
+.left-orderInfo .left-up #order-number{
+    font-size: 17px;
+}
+.left-orderInfo .left-up ul li:last-child{
+    border-bottom: 0 solid ;
+}
+.left-orderInfo .left-up ul .order-number span:nth-child(1){
+    letter-spacing: 7px;
+}
+/*付款按钮*/
+.left-orderInfo .left-up .payment-box{
+    position: absolute;
+    left: 360px;
+    top: 40px;
+    width: 208px;
+    height: 128px;
+    display: none;
+}
+.left-orderInfo .left-up .payment-box .pay-btn span{
+    width: 84px;
+    height: 34px;
+    line-height: 34px;
+    background: #f6c63e;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 6px;
+    text-align: center;
+
+}
+.left-orderInfo .left-up .payment-box .pay-btn span:nth-child(2){
+    margin-left: 23px;
+    background: #c6c6c6;
+}
+/*付款倒计时*/
+.left-orderInfo .left-up .payment-box .surplus-time{
+    font-size: 18px;
+    color: black;
+    text-align: right;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.left-orderInfo .left-up .payment-box .surplus-time span:nth-child(2){
+    color: red;
+}
+.left-orderInfo .left-up .payment-box .surplus-time span:nth-child(3){
+    color: red;
+}
+.left-orderInfo .left-up .payment-box  .order-tip{
+    color: #444444;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+/*左侧table下部分*/
+.left-orderInfo  .left-down table{
+    position: absolute;
+    left: 19px;
+    top: 214px;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    color: #494949;
+    border: 1px solid white;
+}
+.left-orderInfo  .left-down table thead th{
+    text-align: center;
+    font-size: 16px;
+    width: 20%;
+    padding: 2% 1.0%;
+    background: #aebbc3;
+    color: white;
+}
+.left-orderInfo  .left-down table thead th img{
+    width: 18px;
+    height: 18px;
+    vertical-align: sub;
+    margin-right: 3px;
+}
+.left-orderInfo  .left-down table tbody td{
+    text-align: center;
+    font-size: 16px;
+    width: 20%;
+    padding: 1%;
+    background: #9da8c7;
+    color: white;
+}
+.left-orderInfo  .left-down table tbody td:nth-child(1){
+    width: 40%;
+    border-top: 1px solid darkgray;
+    text-align: left;
+    padding-left: 3%;
+}
+.left-orderInfo  .left-down table tbody td:nth-child(1) img{
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-right: 5%;
+    width: 60px;
+    height: 60px;
+}
+
+/*右部分  收货人信息，付款信息，物流信息*/
+.right-anotherInfo{
+    position: absolute;
+    left: 632px;
+    top: 18px;
+    width: 366px;
+    height: 460px;
+    color: #5F5F5F;
+}
+.right-anotherInfo>div{
+    position: absolute;
+    width: 366px;
+    height: 145px;
+    background: white;
+    letter-spacing:1px;
+}
+
+.right-anotherInfo div .info-title{
+    display: inline-block;
+    position: absolute;
+    background: #aebbc3;
+    color: white;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 3px solid #7e94ce;
+}
+
+.right-anotherInfo div .info-title img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 14px;
+    top: 10px;
+}
+.right-anotherInfo div .info-title span{
+    font-size:14px;
+    position: absolute;
+    left: 42px;
+    top: 3px;
+}
+
+.right-anotherInfo div .detail-info {
+    position: absolute;
+    top: 43px;
+    left: 14px;
+    width: 351px;
+    height: 108px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+.right-anotherInfo div .detail-info p{
+    line-height: 28px;
+    width: 351px;
+}
+.right-anotherInfo div .detail-info #consigneeAddress{
+    width: 273px;
+    display: inline-block;
+    line-height: 22px;
+    vertical-align: top;
+}
+/*付款信息*/
+.right-anotherInfo #pay-info{
+    position: absolute;
+    height: 170px;
+    top:154px;
+}
+.right-anotherInfo #pay-info .detail-info p {
+    line-height: 25px;
+    width: 325px;
+    font-size: 16px;
+}
+/*物流信息*/
+.right-anotherInfo #logistics-info{
+    display: none;
+    position: absolute;
+    height: 137px;
+    top:323px;
+}
+.right-anotherInfo #logistics-info .detail-info p {
+    line-height: 24px;
+    width: 325px;
+    font-size: 16px;
+}
+#query-delivery span{
+    display: inline-block;
+    width: 134px;
+    color: white;
+    background: #f6c63e;
+    padding: 5px 0;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 2px;
+}
+.right-anotherInfo #logistics-info #ExpressNumber{
+    width: 180px;
+    display: inline-block;
+}
+
+/*物流弹出框*/
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.7);
+}
+.modal-content{
+    display: block;
+    width: 720px;
+    margin: 100px auto;
+    border-radius:10px;
+    -webkit-animation: zoom 0.6s;
+    animation: zoom 0.6s;
+    overflow: auto;
+    background: white;
+}
+.modal_title{
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #6173b1;
+}
+.modal-content ul{
+
+    font-size: 16px;
+    line-height: 30px;
+    background:#aebbc3 ;
+    padding-bottom: 40px;
+}
+.modal-content ul li{
+    background: white;
+    padding-bottom: 4px;
+    padding-left: 20px;
+}
+.modal-content ul span{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    background:aqua ;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.modal-content ul li p{
+    display: inline-block;
+    width: 655px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.modal-content ul li strong{
+    font-weight: 400;
+}
+.modal-content ul li strong:nth-child(1){
+    margin-right: 4px;
+}
+

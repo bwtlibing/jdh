@@ -1,0 +1,232 @@
+
+/*左边样式*/
+.product-show-left{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    width: 189px;
+    height: 363px;
+    background: #227695;
+}
+
+.product-show-left .product-img-area .big-img-box{
+    width: 166px;
+    height: 236px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 13px;
+    top: 12px;
+}
+
+.product-show-left .product-img-area .big-img-box #plyIfr{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 230px;
+}
+.product-show-left .product-img-area .big-img-box #bigImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 230px;
+    text-align: center;
+}
+
+/*小图片容器*/
+.product-show-left .product-img-area .small-img-box{
+    position: absolute;
+    left: 14px;
+    top: 255px;
+    height: 50px;
+    width: 250px;
+}
+.product-show-left .product-img-area .small-img-box img{
+    width: 34px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+/*卖家*/
+.product-show-left #seller{
+    position: absolute;
+    top: 317px;
+    left: 14px;
+    width: 160px;
+    height: 28px;
+    line-height: 24px;
+}
+.product-show-left #seller .shops {
+    font-size: 16px;
+    color: white;
+    width: 162px;
+}
+.product-show-left #seller .shops img{
+    vertical-align: middle;
+    width: 18px;
+    height: 26px;
+}
+.product-show-left #seller .shops .shops-name{
+    vertical-align: middle;
+    margin-left: 2px;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 129px;
+    line-height: 16px;
+}
+/*右边商品详情样式*/
+.product-details-right{
+    position: absolute;
+    width: 288px;
+    height: 333px;
+    left: 257px;
+    top: 100px;
+    background: #f0f2fa;
+    padding: 15px 15px;
+}
+.product-details-right .product-name-box{
+    width: 285px;
+}
+.product-details-right .product-name-box .name-header p{
+    display: inline-block;
+}
+
+.product-details-right .product-name-box .product-name{
+    width: 196px;
+    color: #4A4A4A;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.product-details-right .product-name-box .product-sales-volume{
+    width: 83px;
+    text-align: right;
+    font-size: 16px;
+    color: #656565;
+}
+.product-details-right .product-name-box .product-sales-volume span:nth-child(2){
+    color: #F91C4B;
+}
+.product-details-right .product-name-box .promotion-info{
+    /*font-size: 24px;*/
+    padding-top: 4px;
+    color: #F91C4B;
+    font-size: 16px;
+}
+
+/*商品价格活动部分*/
+.product-details-right .product-price{
+    background: #BDC6DC;
+    padding: 8px 7px;
+    font-size: 16px;
+    height: 50px;
+    margin-top: 7px;
+}
+.product-details-right .product-price p{
+    color: #656565;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.product-details-right .product-price p del{
+    color: #848484;
+    font-size: 17px;
+}
+
+.product-details-right .product-price .product-price-num{
+    color: red;
+    font-size: 18px;
+}
+
+/*活动标签*/
+.product-details-right .discount-activity{
+    margin-top: 8px;
+    color: #656565;
+    /*display: none;*/
+    display: block;
+
+}
+.product-details-right .discount-activity span{
+    font-size: 16px;
+    vertical-align: top;
+}
+.product-details-right .discount-activity ul{
+    vertical-align: bottom;
+    display: inline-block;
+    list-style: none;
+    width: 206px;
+}
+.product-details-right .discount-activity ul li{
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 2px;
+    text-align: center;
+    margin-right: 5px;
+    color: #FFFEFE;
+    background-color: #EC9820;
+    padding: 1px 4px;
+    height: 18px;
+    line-height: 18px;
+}
+
+/*商品介绍及配送介绍*/
+
+.product-details-right .product-introduce-box{
+    width: 292px;
+    margin-top: 6px;
+    color: #656565;
+    letter-spacing: 1px;
+
+}
+.product-details-right .product-introduce-box div{
+    margin-top: 3px;
+    font-size: 16px;
+}
+.product-details-right .product-introduce-box div span{
+    vertical-align: top;
+    letter-spacing: 1px;
+
+}
+.product-details-right .product-introduce-box div p{
+    display: inline-block;
+    width: 210px;
+}
+/*.product-details-right .product-distribution{
+    margin-top: 2%;
+}*/
+/*下单按钮*/
+.btns-box{
+    position: absolute;
+    width: 250px;
+    height: 32px;
+    top: 323px;
+}
+.btns .order-btn ,.btns .collect-btn{
+    position: absolute;
+}
+.btns .order-btn{
+    position: absolute;
+    left: 0;
+    width: 85px;
+    height: 32px;
+}
+.btns .order-btn  img{
+    width: 85px;
+    height: 32px;
+    display: block;
+
+}
+.btns .collect-btn{
+    position: absolute;
+    left: 100px;
+    width: 52px;
+    height: 32px;
+
+}
+.btns .collect-btn  img{
+    width: 52px;
+    height: 32px;
+    display: block;
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+body{
+
+    height: 100%;
+    width: 100%;
+    background: url("../../img/index-img/background-img.png") no-repeat;
+    background-size: cover;
+    color: black;
+}
+.content{
+    padding: 70px 180px 20px 180px;
+}
+/*头部样式*/
+.header{
+
+    position: relative;
+    height: 8%;
+    margin-bottom: 1%;
+}
+.header .logo{
+    position: absolute;
+    margin-left: -110px;
+}
+.header .logo img{
+    width: 100%;
+}
+
+.header  .title{
+    position: absolute;
+    left: 0%;
+    top: 7%;
+    width: 60%;
+}
+
+.header .go-back{
+    position: absolute;
+    right: 0;
+}
+.header .go-back div{
+    text-align: center;
+    color: white;
+    background-color: #169bd5;
+    width: 180px;
+    line-height: 50px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+
+
+/*底部样式*/
+
+.footer{
+    /*border: 1px solid teal;*/
+    margin-top: 30px;
+}
+.footer:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer .footer-left{
+
+    float: left;
+}
+.footer .footer-left #user-id{
+    margin-right: 80px;
+}
+.footer .footer-left #user-id ,.footer .footer-left .activity-info{
+    display: inline-block;
+}
+.footer .footer-left .activity-info{
+    /*border: 1px solid red;*/
+}
+.footer .footer-left .activity-info p img{
+    vertical-align: bottom;
+}
+.footer .footer-left .activity-info p marquee{
+    width: 300px;
+    height: 20px;
+}
+.footer .footer-right{
+    font-size: 18px;
+    float: right;
+}

@@ -1,0 +1,131 @@
+/*翼支付合作商家*/
+.partnerBox{
+    position: absolute;
+    top: 140px;
+    left:130px;
+    background: #f0f2fa;
+    width: 1018px;
+    height: 510px;
+}
+.partnerBox .title{
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    color: white;
+    font-size: 20px;
+    text-indent: 2em;
+    background: #959fc6;
+}
+#partnerList{
+    position: absolute;
+    left: 30px;
+    top: 56px;
+    width: 954px;
+    height: 395px;
+}
+#partnerList ul li{
+    position: absolute;
+    width: 460px;
+    height: 72px;
+    background: #ffffff;
+    letter-spacing: 1px;
+}
+#partnerList ul li .newplot{
+    /*width: 460px;*/
+    height: 62px;
+    display: block;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#partnerList ul li .showImg{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 107px;
+    height: 63px;
+}
+
+#partnerList ul li .textInfo{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 338px;
+    height: 69px;
+
+}
+#partnerList ul li .textInfo .supName {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+}
+#partnerList ul li .textInfo .supName img {
+     position: absolute;
+     top:4px;
+     width: 15px;
+     height: 15px;
+}
+#partnerList ul li .textInfo .supName .name{
+    margin-left: 19px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#partnerList ul li .textInfo .introduction{
+    position: absolute;
+    top: 27px;
+    left: 3px;
+    color: #797979;
+}
+#partnerList ul li .textInfo .introduction .desInfo{
+    display: inline-block;
+    padding-right:6px;
+    height: 13px;
+    line-height: 13px;
+    border-right:1px solid #797979
+}
+#partnerList ul li .textInfo .introduction .time{
+   margin-left: 6px;
+}
+
+#partnerList ul li .textInfo .supAddress{
+    position: absolute;
+
+    top: 46px;
+    left: 3px;
+    color: #797979;
+}
+#partnerList ul li .textInfo .supAddress img {
+    position: absolute;
+    right: -18px;
+    top: 4px;
+    width: 12px;
+    margin-left: 3px;
+}
+/*底部按钮*/
+.footBtn {
+    position: absolute;
+    top: 456px;
+    left: 58px;
+    width: 900px;
+    height: 45px;
+}
+.footBtn span {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background: #499dd8;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.footBtn #btnUp{
+    top: 3px;
+    left: 158px;
+}
+
+.footBtn #btnDown{
+    top: 3px;
+    left: 645px;
+}

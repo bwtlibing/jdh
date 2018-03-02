@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>订单确认页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="page-view-size" content="1280*720">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="../../css/global/alert.css">
+    <link rel="stylesheet" href="../../css/order-sure-oldUser.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 720px;
+            width: 1280px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+        .orderSure-box{
+            background: #f0f2fa;
+            width: 1018px;
+            height: 506px;
+            position: absolute;
+            left: 130px;
+            top: 130px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <!--头部-->
+    <div class="header">
+        <img style="position: absolute ; left: 130px; top: 52px;  width: 65px;height: 50px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ; left: 204px; top: 50px;  width: 100px;height: 35px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p style="position: absolute;left: 204px; top: 82px; height:30px;line-height: 30px;width: 248px;color: white">
+            客服电话：12345678</p>
+        <marquee
+                style="position: absolute;right: 200px; top: 75px; width: 245px; height: 32px;line-height: 34px ;color: white"
+                scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+
+        <img class="menu-item" src="../../img/user.png" style="position: absolute;right: 130px; top: 58px;  width: 55px;height: 50px;"
+             alt="">
+    </div>
+
+    <!--用户下单信息-->
+    <div class="orderSure-box" >
+        <div class="left-QRcode">
+            <div class="MS-code">
+                <img src="../../img/order-img/saoMaTip.png" alt="">
+                <span>手机扫码</span>
+            </div>
+            <p class="tipInfo">您也可以扫描下方二维码，在手机上查看、编辑收货人完整信息并确认订单。</p>
+            <img id="order-QRcode" src="" alt="">
+            <img id="Backimg" src="../../img/order-img/QRcodeBackImg.png" alt="">
+        </div>
+
+        <div class="right-detailInfo"><!--右侧具体信息-->
+            <div class="up-consigneeInfo"><!--收货人信息-->
+                <p class="consigneeInfo">
+                    <img src="../../img/order-img/wuLiuChe.png" alt="">
+                    <span>收货人信息</span>
+                </p>
+                <ul id="addressUl">
+                   <!-- <li class="menu-item addressList"  >
+                           <span class="house">
+                                <img src="../../img/order-img/company.png" alt="">
+                           </span>
+                        <span class="consigneeName">张三</span>
+                        <span class="consigneeAddress">陕西省西安市雁塔区高新路56号 </span>
+                        <span class="consigneePhone">15210671234</span>
+                        <span>
+                               <img style="display: inline-block" class="lighten-icon" src="../../img/order-img/redDuiHao.png" alt="">
+                           </span>
+                    </li>
+                    <li class="menu-item addressList"  >
+                           <span class="house">
+                                <img src="../../img/order-img/company.png" alt="">
+                           </span>
+                        <span class="consigneeName">张三</span>
+                        <span class="consigneeAddress">陕西省西安市雁塔区高新路56号 </span>
+                        <span class="consigneePhone">15210671234</span>
+                        <span >
+                               <img style="display: inline-block" class="lighten-icon" src="../../img/order-img/redDuiHao.png" alt="">
+                           </span>
+                    </li>
+                    <li class="menu-item addressList"  >
+                           <span class="house">
+                                <img src="../../img/order-img/company.png" alt="">
+
+                           </span>
+                        <span class="consigneeName">张三</span>
+                        <span class="consigneeAddress">陕西省西安市雁塔区高新路56号 </span>
+                        <span class="consigneePhone">15210671234</span>
+                        <span >
+                               <img style="display: inline-block" class="lighten-icon" src="../../img/order-img/redDuiHao.png" alt="">
+                           </span>
+                    </li>-->
+                    <!--<li class="menu-item addressList"  data-receive="2">
+                         <span>
+                            <img src="../../img/order-img/company.png" alt="">
+
+                        </span>
+                        <span class="consigneeName">李gfh四</span>
+                        <span class="consigneeAddress">北京市海淀区59号 </span>
+                        <span class="consigneePhone">15282427993</span>
+                        <span >
+                            <img class="lighten-icon"  src="../../img/order-img/redDuiHao.png" alt="">
+                        </span>
+                    </li>
+                    <li class="name menu-item addressList" data-receive="3">
+                        <span>
+                               <img src="../../img/order-img/company.png" alt="">
+
+                        </span>
+                        <span class="consigneeName">王解决五</span>
+                        <span class="consigneeAddress">山东省某个市45号 </span>
+                        <span class="consigneePhone">18317289348</span>
+                        <span>
+                            <img class="lighten-icon" src="../../img/order-img/redDuiHao.png" alt="">
+                        </span>
+                    </li>-->
+                </ul>
+            </div>
+            <hr>
+            <div class="down-orderMoney">
+                <table cellspacing="1">
+                    <thead>
+                    <tr>
+                        <th>
+                            <img src="../../img/order-img/product.png" alt="">
+                            <span>商品</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/price.png" alt="">
+                            <span>单价（元）</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/num.png" alt="">
+                            <span> 数量（个）</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/discount.png" alt="">
+                            <span>折扣</span>
+                        </th>
+                        <th>
+                            <img src="../../img/order-img/xiaoJi.png" alt="">
+                            <span> 小计</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td id="productName"></td>
+                        <td id="price"></td>
+                        <td id="ProductNum">
+                            <span class="menu-item"  ><strong >-</strong ></span>
+                            <span style="border: 3px solid transparent" class="" ><input id="quantity" class="number" type="text" disabled="disabled" readonly="readonly" value="1"></span>
+                            <span  class="menu-item"><strong>+</strong></span>
+                        </td>
+                        <td id="discount"></td>
+                        <td id="totalMoney"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="total-money-box">
+                    <div class="total-money">
+                        <p><span>商品总额：</span><span class="rightMoney"   id="totalVolume"></span></p>
+                        <p><span>折&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;扣：</span><span class="rightMoney" id="discountMoney"></span></p>
+                        <p><span>运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span><span class="rightMoney" id="freight"></span></p>
+                        <p><span>订单总额：</span><span  class="final-money rightMoney" id="orderMoney"></span></p>
+                        <div class="submitOrder-btn menu-item">
+                            提交订单
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+        </div>
+    </div>
+</div>
+<script src="../../js/public/Util.js"></script>
+<script src="../../js/order-sure-oldUser.js"></script>
+</body>
+</html>

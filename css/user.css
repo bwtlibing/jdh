@@ -1,0 +1,261 @@
+
+/*------用户信息具体部分---------*/
+.user-box {
+    position: absolute;
+    left: 130px;
+    top: 140px;
+    color: #656565;
+    width: 1018px;
+    height: 505px;
+    background:#f0f2fa ;
+}
+.user-info {
+    width: 685px;
+    height: 90px;
+    position: absolute;
+    left: 15px;
+    top:20px;
+}
+/*头部信息*/
+.user-info  .left{
+    border: 2px solid #00A0E9;
+    width: 290px;
+    height: 90px;
+    text-align: center;
+    display: inline-block;
+}
+.user-info  .left>img{
+    display: inline-block;
+    width:70px;
+    height:70px;
+    margin-top: 10px;
+}
+
+.user-info  .idPhone{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 155px;
+}
+.user-info  .idPhone{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user-info .idPhone .sx-title{
+    color: #4a4a4a;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.user-info  .idPhone .phoneNum{
+    font-size: 19px;
+    color: #1952C1;
+    margin-top: 10px;
+    width: 155px;
+}
+.user-info  .idPhone .phoneNum img{
+    vertical-align: bottom;
+    width: 18px;
+    height: 25px;
+}
+/*用户二维码*/
+.user-info .user-QRcode{
+    display: inline-block;
+    width: 370px;
+    height: 90px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.user-info .user-QRcode img{
+    border: 1px solid #4F7BD0;
+    width: 92px;
+    height: 92px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.user-info .user-QRcode p{
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    margin-top:2px;
+    margin-left: 5px;
+    color: #4F7BD0;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+/*<!--用户订单、收藏部分-->*/
+/*左边部分*/
+.order-collect-box .left-order{
+    position: absolute;
+    left: 15px;
+    top:125px;
+    width: 620px;
+    height: 365px;
+    background: white;
+}
+.order-collect-box .left-order .title-tip{
+    background: #aebbc3;
+    display: inline-block;
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 3px solid #7e94ce;
+}
+.order-collect-box .left-order .title-tip img{
+    vertical-align: text-top;
+    width: 20px;
+    height: 22px;
+}
+
+/*ul列表区域*/
+.left-order .order-list {
+    height: 235px;
+    width: 580px;
+    display: none;
+    margin: 20px auto;
+    /*display: none; !*改好后注释放开*!*/
+}
+.left-order .order-list  li{
+    border: 2px solid #afafaf;
+    margin-bottom:8px;
+    font-size: 16px;
+    color: black;
+    height: 54px;
+    width: 562px;
+    padding: 8px 6px;
+}
+.left-order .order-list  li p .order-status{
+    width: 184px;
+    display: inline-block;
+    margin-left: 6px;
+}
+.left-order .order-list  li p .goods-num{
+    width: 200px;
+    display: inline-block;
+    margin-right: 0;
+}
+.left-order .order-list  li p:nth-child(1){
+    margin-bottom: 10px;
+}
+.left-order .order-list  li p:nth-child(2) {
+    position: relative;
+}
+.left-order .order-list  li p:nth-child(2) .order-money{
+    position: absolute;
+    right:0;
+    width: 205px;
+    display: inline-block;
+}
+/*缺省图样式*/
+.tip-box{
+    padding: 8px 6px 8px;
+    height: 250px;
+    text-align: center;
+    display: block;
+}
+.tip-box .tip-Img{
+    vertical-align: bottom;
+    width: 250px;
+    height: 190px;
+    margin-top: 35px;
+}
+/*翻页的样式*/
+.page-turn{
+    text-align: center;
+    margin-top: 10px;
+}
+.page-turn span {
+    text-align: center;
+    margin-right: 8px;
+}
+.page-turn .up-page ,.page-turn .down-page{
+    background-color: #7E94CE;
+    width: 65px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+}
+.page-turn .middle{
+    color: #6881FF;
+    font-size: 18px;
+    vertical-align: top;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    line-height: 40px;
+}
+.page-turn  .current-page{
+    text-align: center;
+    color: #6881FF;
+    margin-right: 0;
+}
+/*收藏部分*/
+.order-collect-box .right-collect{
+    position: absolute;
+    left: 652px;
+    top: 125px;
+    width: 348px;
+    height: 365px;
+    background: white;
+}
+.order-collect-box .right-collect .title-tip{
+    background: #aebbc3;
+    display: inline-block;
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 3px solid #7e94ce;
+}
+.order-collect-box .right-collect .title-tip img{
+    vertical-align: text-top;
+    width: 22px;
+    height: 22px;
+}
+/*右侧ul列表区域*/
+.right-collect .order-list {
+    height: 235px;
+    width: 320px;
+    display: none;/*写好后要改成none*/
+    margin: 20px auto;
+}
+.right-collect .order-list  li{
+    border: 2px solid #afafaf;
+    margin-bottom:8px;
+    font-size: 16px;
+    color: black;
+    height: 62px;
+    width: 309px;
+    padding: 4px 4px;
+}
+.right-collect .order-list  li img{
+    width: 60px;
+    height: 58px;
+    margin-top: 2px;
+}
+.right-collect .order-list  li div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.right-collect .order-list  li div p:nth-child(2){
+    margin-top: 6px;
+}
+
+
+
+

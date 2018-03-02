@@ -1,0 +1,161 @@
+
+
+/*商家介绍及商品展示*/
+/*.merchant-box{
+    position: absolute;
+    top:140px;
+    left: 130px;
+    width: 1018px;
+    height: 505px;
+    border: 1px solid red;
+
+}*/
+.merchant-box .merchant-info{
+    height: 151px;
+    width: 514px;
+    background: #f0f2fa;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+.merchant-box .merchant-info .merchant-headerImg img{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 55px;
+    height: 83px;
+
+}
+.merchant-box .merchant-info .merchant-describe{
+    position: absolute;
+    top: 8px;
+    left: 80px;
+    width: 420px;
+    height: 83px;
+}
+.merchant-box .merchant-info .merchant-describe p:nth-child(1){
+    color: #4A4A4A;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 2px;
+}
+.merchant-box .merchant-info .merchant-describe p:nth-child(2){
+    margin-bottom: 0;
+    background: #EC9820;
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 125px;
+    height: 23px;
+    line-height: 23px;
+
+
+}
+.merchant-box .merchant-info .merchant-describe p:nth-child(3){
+    font-size: 16px;
+    color: #656565;
+    margin-bottom: 1px;
+
+}
+.merchant-box .merchant-info .merchant-describe p:nth-child(3) #sellerIntroduce{
+    width: 340px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.merchant-box .merchant-info .merchant-describe p:nth-child(4){
+    font-size: 16px;
+    color: #656565;
+}
+.merchant-box .merchant-info  .tabs{
+    position: absolute;
+    left: 15px;
+    top: 117px;
+    width: 165px;
+    height: 30px;
+    /* border: 1px solid; */
+}
+.merchant-box .merchant-info  .tabs img{
+    width: 67px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+/*商家下部分的图片区域*/
+.goods-container{
+    position: absolute;
+    top: 262px;
+    left: 60px;
+    width: 514px;
+    height: 212px;
+    background: #227695;
+}
+
+.goods-container .merchant-des-box{
+    /* position: absolute;
+     top: 361px;
+     left: 130px;
+     width: 1018px;
+     height: 295px;
+     background: #227695;*/
+    display: block;
+}
+.goods-container .merchant-des-box ul{
+    list-style: none;
+}
+
+/*左边部分*/
+.goods-container .merchant-des-box .common{
+    position: absolute;
+    display: inline-block;
+    width: 225px;
+    height: 190px;
+    top: 0;
+    left: 0;
+}
+.goods-container .merchant-des-box .common .item{
+    position: absolute;
+    display: inline-block;
+    width: 104px;
+    height: 90px;
+}
+
+/*商家介绍右边部分*/
+.goods-container .merchant-des-box .right-bigImg-show{
+    position: absolute;
+    top: 11px;
+    left: 245px;
+    width: 250px;
+    height: 190px;
+}
+.goods-container .merchant-des-box .right-bigImg-show  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 190px;
+}
+
+/*商品列表*/
+.goods-container .product-list{
+    display: none;
+}
+.goods-container .product-list img{
+    position: absolute;
+    width: 88px;
+    height: 92px;
+}
+
+
+
+
+
+
+
+
+
+
+

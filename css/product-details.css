@@ -1,0 +1,225 @@
+
+/*左边样式*/
+.product-show-left{
+    position: absolute;
+    top: 140px;
+    left: 130px;
+    width: 378px;
+    height: 505px;
+    background: #227695;
+}
+.product-show-left .product-img-area .big-img-box{
+    width: 326px;
+    height: 326px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 25px;
+    top: 28px;
+}
+
+.product-show-left .product-img-area .big-img-box #plyIfr{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 320px;
+
+}
+.product-show-left .product-img-area .big-img-box #bigImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 320px;
+    text-align: center;
+}
+
+/*小图片容器*/
+.product-show-left .product-img-area .small-img-box{
+    position: absolute;
+    left: 24px;
+    top:370px;
+    height: 70px;
+    width: 500px;
+}
+.product-show-left .product-img-area .small-img-box img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/*卖家*/
+.product-show-left #seller{
+    position: absolute;
+    top: 455px;
+    left: 28px;
+    width: 320px;
+    height: 38px;
+    line-height: 34px;
+}
+.product-show-left #seller .shops {
+    font-size: 18px;
+    color: white;
+}
+.product-show-left #seller .shops img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+.product-show-left #seller .shops .shops-name{
+    vertical-align: middle;
+    margin-left: 6px;
+    letter-spacing: 2px;
+}
+
+/*右边商品详情样式*/
+.product-details-right{
+    position: absolute;
+    width: 570px;
+    height: 445px;
+    left: 517px;
+    top: 140px;
+    background: #f0f2fa;
+    padding:30px;
+}
+.product-details-right .product-name-box{
+    width: 570px;
+}
+.product-details-right .product-name-box .name-header p{
+    display: inline-block;
+}
+
+.product-details-right .product-name-box .product-name{
+    width: 330px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.product-details-right .product-name-box .product-sales-volume{
+    width: 220px;
+    text-align: right;
+    font-size: 16px;
+    color: #656565;
+}
+.product-details-right .product-name-box .product-sales-volume span:nth-child(2){
+    color: #F91C4B;
+}
+.product-details-right .product-name-box .promotion-info{
+    /*font-size: 24px;*/
+    padding-top: 4px;
+    color: #F91C4B;
+    font-size: 16px;
+}
+
+/*商品价格活动部分*/
+.product-details-right .product-price{
+    background: #BDC6DC;
+    padding: 15px;
+    font-size: 18px;
+    height: 70px;
+    margin-top: 10px;
+}
+.product-details-right .product-price p{
+    color: #656565;
+    line-height: 35px;
+    letter-spacing: 3px;
+}
+.product-details-right .product-price p del{
+    color: #848484;
+    font-size: 22px;
+}
+
+.product-details-right .product-price .product-price-num{
+    color: red;
+    font-size: 24px;
+}
+
+/*活动标签*/
+.product-details-right .discount-activity{
+    margin-top: 25px;
+    color: #656565;
+    /*display: none;*/
+    display: block;
+}
+.product-details-right .discount-activity span{
+    font-size: 16px;
+    vertical-align: top;
+}
+.product-details-right .discount-activity ul{
+    vertical-align: bottom;
+    display: inline-block;
+    list-style: none;
+    width: 475px;
+
+}
+.product-details-right .discount-activity ul li{
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 5px;
+    color: #FFFEFE;
+    background-color: #EC9820;
+    padding: 3px 8px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*商品介绍及配送介绍*/
+
+.product-details-right .product-introduce-box{
+    width: 570px;
+    margin-top: 10px;
+    color: #656565;
+    letter-spacing: 1px;
+
+}
+.product-details-right .product-introduce-box div{
+    margin-top: 2%;
+    font-size: 16px;
+}
+.product-details-right .product-introduce-box div span{
+    vertical-align: top;
+    letter-spacing: 1px;
+
+}
+.product-details-right .product-introduce-box div p{
+    display: inline-block;
+    width: 475px;
+}
+
+/*下单按钮*/
+.btns-box{
+    position: absolute;
+    width: 500px;
+    height: 45px;
+    top: 448px;
+}
+.btns .order-btn ,.btns .collect-btn{
+    position: absolute;
+}
+.btns .order-btn{
+    position: absolute;
+    left: 0;
+    width: 165px;
+    height: 45px;
+}
+.btns .order-btn  img{
+    width: 165px;
+    height: 45px;
+    display: block;
+}
+.btns .collect-btn{
+    position: absolute;
+    left: 200px;
+    width: 104px;
+    height: 45px;
+}
+.btns .collect-btn  img{
+    width: 104px;
+    height: 45px;
+    display: block;
+}

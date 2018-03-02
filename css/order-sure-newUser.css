@@ -1,0 +1,31 @@
+/*<!--新用户信息提示-->*/
+.newUser-tip {
+    position: absolute;
+    top: 140px;
+    left: 130px;
+    text-align: center;
+    width: 1018px;
+    height: 505px;
+    background: #f0f2fa;
+}
+.newUser-tip .text-tip {
+    width: 1018px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 75px;
+    color: #656565;
+    font-size: 16px;
+}
+.newUser-tip .text-tip img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+.newUser-tip .text-tip span {
+    vertical-align: middle;
+}
+.newUser-tip #newUser-QRcode{
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}

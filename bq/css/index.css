@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*height: 720px;*/
+
+}
+body{
+    height:530px;
+    width: 640px;
+    margin: 0 auto;
+    background: url("../img/index-img/background-img.png") no-repeat;
+    background-size: cover;
+}
+
+.content{
+    padding: 20px 3% 20px 4%;
+}
+/*头部样式*/
+.header{
+
+    position: relative;
+    height: 33px;
+    margin-bottom:10px;
+}
+.header .logo{
+    position: absolute;
+    margin-left: -35px;
+    /*margin-top: 5px;*/
+}
+.header .logo img{
+    width: 25px;
+    height: 35px;
+}
+.header  .title{
+    position: absolute;
+    /*margin-left: 40px;*/
+    /*left: 0%;
+    top: 0px;*/
+    /* width:106px;
+     border: 1px solid fuchsia;*/
+}
+.header  .title img{
+    width: 60px;
+    height: 35px;
+}
+.header .go-back{
+    position: absolute;
+    right: 0;
+}
+.header .go-back div{
+    text-align: center;
+    color: white;
+    width: 180px;
+    line-height: 50px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+/*菜单列表样式*/
+.menu-box {
+    margin-bottom: 5px;
+
+}
+.menu-box .menu-list {
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    position: relative;
+    height: 50px;
+}
+.menu-box .menu-list li{
+    position: absolute;
+    text-align: center;
+    /*width: 166px;*/
+    width: 16%;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+.menu-box .menu-list li img{
+    width: 85px;
+    display: block;
+    height: 35px;
+
+}
+.menu-box .menu-list li img:nth-child(2){
+    position: absolute;
+    margin-top: 8px;
+    left: 0;
+
+}
+.menu-box .menu-list li:nth-child(1){
+    left: 0;
+}
+.menu-box .menu-list li:nth-child(2){
+    left: 24%;
+}
+.menu-box .menu-list li:nth-child(3){
+    left: 48%;
+}
+.menu-box .menu-list li:nth-child(4){
+    left: 71%;
+}
+.menu-box .menu-list li:nth-child(5){
+    width: 35px;
+    right: 0;
+
+}
+.menu-box .menu-list li:nth-child(5) img:nth-child(1){
+    width: 31px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.menu-box .menu-list li:nth-child(5) img:nth-child(2){
+    width: 24px;
+    margin-left: 0px;
+
+}
+/*商品推荐位*/
+
+.Featured{
+    position: relative;
+    height: 43%;
+    margin-top: 0%;
+}
+.Featured .Featured-left ,.Featured .Featured-middle,.Featured .Featured-right {
+
+    text-align: center;
+    position: absolute;
+}
+
+/*左边部分*/
+.Featured .Featured-left{
+    /*width: 15%;*/
+    width: 92px;
+    heigh:100px
+
+}
+.Featured .Featured-left img{
+
+    width: 86px;
+    /*height: 409px;*/
+    height: 310px;
+}
+/*中间部分*/
+.Featured .Featured-middle{
+    /*width: 38.5%;*/
+    width: 228px;
+
+    height: 200px;
+    left: 15.5%;
+
+}
+.Featured .Featured-middle .Featured-middle-up{
+    width: 100%;
+    margin-bottom:1.5%;
+    /*height: 80%;*/
+}
+/*.Featured .Featured-middle .Featured-middle-up img{
+    width: 100%;
+}*/
+
+/*推荐位轮播开始*/
+.Featured .Featured-middle .Featured-middle-up .slide-show{
+    position: relative;
+
+
+}
+.Featured .Featured-middle .Featured-middle-up .slide-show .list {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.Featured .Featured-middle .Featured-middle-up .slide-show .list li{
+    position: absolute;
+
+    width: 100%;
+}
+.Featured .Featured-middle .Featured-middle-up .slide-show .list li img{
+    width: 100%;
+    height:199px;
+    opacity: 0;
+    transition: all 2s;
+
+}
+
+.Featured .Featured-middle .Featured-middle-up .slide-show .btn {
+    position: absolute;
+    list-style: none;
+    bottom:5%;
+    right: 10%;
+    width: 100%;
+    text-align: right;
+    margin-right: 10%;
+
+}
+.Featured .Featured-middle .Featured-middle-up .slide-show .btn li{
+    display: inline-block;
+    color: white;
+    width: 10px;
+    height: 10px;
+    margin-right: 2%;
+    background-color: darkgray;
+    border-radius: 50%;
+}
+.Featured .Featured-middle .Featured-middle-up .slide-show .btn .active{
+
+    background-color:white ;
+}
+
+/*推荐位轮播结束*/
+
+.Featured .Featured-middle .Featured-middle-down{
+    width: 100%;
+    position: relative;
+}
+
+.Featured .Featured-middle .Featured-middle-down div {
+    width: 48%;
+    position: absolute;
+}
+
+.Featured .Featured-middle .Featured-middle-down div img {
+    width: 100%;
+    height: 105px;
+}
+.Featured .Featured-middle .Featured-middle-down div:nth-child(1){
+    left: 0;
+}
+.Featured .Featured-middle .Featured-middle-down div:nth-child(2){
+    right: 0;
+}
+
+/*右边的样式*/
+.Featured .Featured-right{
+    width: 45.5%;
+    /*height: 48%;*/
+    right: 0;
+
+}
+.Featured .Featured-right  .Featured-right-up{
+    /*width: 100%;*/
+    width: 266px;
+    height: 221px;
+    margin-bottom: 2%;
+}
+
+.Featured  .Featured-right  .Featured-right-up video{
+
+    /*width: 100%;*/
+    width: 261px;
+    height: 215px;
+    border-radius: 5px;
+}
+.Featured .Featured-right  .Featured-right-down{
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+.Featured .Featured-right  .Featured-right-down div{
+    position: absolute;
+    width:48.5%;
+}
+.Featured .Featured-right  .Featured-right-down div img{
+
+    width: 98%;
+    height: 88px;
+}
+.Featured .Featured-right  .Featured-right-down div:nth-child(1){
+    left: 0;
+}
+.Featured .Featured-right  .Featured-right-down div:nth-child(2){
+    right: 0;
+}
+
+
+/*底部样式*/
+.footer{
+    position: absolute;
+    width: 640px;
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px 4px 1px black;
+    top: 330px;
+}
+.footer .footer-left {
+    position: absolute;
+    left: 0;
+    width: 375px;
+}
+.footer .footer-left .activity-info p img{
+    vertical-align: bottom;
+    width: 48px;
+}
+.footer .footer-left .activity-info p marquee{
+    width: 300px;
+    height: 25px;
+    margin-left: 1%;
+    vertical-align: bottom;
+    font-size: 16px;
+}
+.footer .footer-right{
+    position: absolute;
+    right: 50px;
+    font-size: 16px;
+    top: 5px;
+}
+
+#bigImg{
+    width: 504px;
+    height: 278px;
+}

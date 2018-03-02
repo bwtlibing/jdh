@@ -1,0 +1,291 @@
+
+
+/*左侧二维码信息*/
+.orderSure-box .left-QRcode{
+    position: absolute;
+    width: 150px;
+    height: 390px;
+    font-size: 16px;
+    left: 10px;
+    top: 8px;
+    background: white;
+}
+
+
+.orderSure-box .left-QRcode .MS-code{
+    position: absolute;
+    width: 150px;
+    background: #aebbc3;
+    color: white;
+    height: 32px;
+    border-bottom: 3px solid #7e94ce;
+}
+
+.orderSure-box .left-QRcode .MS-code img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+    top: 8px;
+}
+.orderSure-box .left-QRcode .MS-code span{
+    vertical-align: middle;
+    font-size:17px;
+    position: absolute;
+    left: 50px;
+    top: 7px;
+}
+
+.orderSure-box .left-QRcode .tipInfo{
+    position: absolute;
+    width: 144px;
+    color: #656565;
+    font-size: 16px;
+    left: 4px;
+    top: 40px;
+}
+.orderSure-box .left-QRcode #order-QRcode{
+    position: absolute;
+    width: 92px;
+    height: 130px;
+    left: 30px;
+    top: 158px;
+}
+.orderSure-box .left-QRcode #Backimg{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 34px;
+    top: 308px;
+}
+
+
+/*右侧收货信息*/
+
+.right-detailInfo{
+    position: absolute;
+    width: 442px;
+    height: 388px;
+    left: 168px;
+    top: 8px;
+}
+.right-detailInfo .up-consigneeInfo{
+    /*margin-bottom: 2%;*/
+}
+
+.right-detailInfo .up-consigneeInfo .consigneeInfo{
+    position: absolute;
+    width: 442px;
+    background: #aebbc3;
+    color: white;
+    height: 32px;
+    border-bottom: 3px solid #7e94ce;
+}
+.right-detailInfo .up-consigneeInfo .consigneeInfo img{
+    position: absolute;
+    width: 28px;
+    height: 18px;
+    left: 20px;
+    top: 10px;
+
+}
+.right-detailInfo .up-consigneeInfo .consigneeInfo span{
+    vertical-align: middle;
+    font-size:17px;
+    position: absolute;
+    left: 60px;
+    top: 7px;
+}
+
+
+/*右侧收货人信息*/
+.right-detailInfo .up-consigneeInfo ul{
+    position: absolute;
+    top: 36px;
+    list-style: none;
+    background: #FFFFFF;
+    color: #494949;
+    font-size: 16px;
+    width: 442px;
+    height: 83px;
+    padding: 6px 0;
+}
+.right-detailInfo .up-consigneeInfo ul li{
+    /* margin-bottom: 8px; */
+    width: 436px;
+    height: 24px;
+    left: 7px;
+    /* padding-top: 7px; */
+}
+.right-detailInfo .up-consigneeInfo ul li:last-child{
+    margin-bottom: 0;
+}
+.right-detailInfo .up-consigneeInfo ul li .house{
+    display: inline-block;
+    margin-right: 1px;
+    vertical-align: middle;
+
+}
+.right-detailInfo .up-consigneeInfo ul li .house img{
+    width: 10px;
+    height: 14px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.right-detailInfo .up-consigneeInfo .consigneeName{
+    display: inline-block;
+    width: 66px;
+    vertical-align: bottom;
+
+}
+.right-detailInfo .up-consigneeInfo .consigneePhone{
+    display: inline-block;
+    width: 105px;
+    vertical-align: bottom;
+
+}
+.right-detailInfo .up-consigneeInfo ul li .consigneeAddress{
+    display: inline-block;
+    width: 188px;
+    vertical-align: bottom;
+}
+
+.right-detailInfo .up-consigneeInfo ul li .tip-DuiGou{
+    width: 6%;
+    padding: 0 0 2px 2%;
+    border-radius: 5px;
+    text-align: left;
+    margin-right: 2%;
+    vertical-align: bottom;
+}
+.right-detailInfo .up-consigneeInfo ul li span:last-child{
+    vertical-align: top;
+    margin-top: 0.3%;
+}
+/*点亮图标*/
+.right-detailInfo .up-consigneeInfo ul li span .lighten-icon{
+    width: 10px;
+    height: 16px;
+    display: none;
+    /*vertical-align: middle;*/
+}
+
+
+/*商品的单价数量及总额下部分样式*/
+
+.right-detailInfo .down-orderMoney{
+    position: absolute;
+    top: 134px;
+    width: 442px;
+}
+.right-detailInfo .down-orderMoney table{
+    width: 443px;
+    text-align: center;
+    color: #494949;
+    border: 1px solid white;
+
+}
+.right-detailInfo .down-orderMoney table thead th{
+    text-align: center;
+    font-size: 16px;
+    width: 20%;
+    padding: 6px;
+    background: #aebbc3;
+    color: white;
+}
+.right-detailInfo .down-orderMoney table thead th img{
+    width: 9px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.right-detailInfo .down-orderMoney table tbody td{
+
+    text-align: center;
+    font-size: 16px;
+    width: 20%;
+    height:70px;
+    padding: 2px 0;
+    background: #9da8c7;
+    color: white;
+}
+
+
+/*商品数量的样式*/
+.right-detailInfo .down-orderMoney table tbody #ProductNum{
+    text-align: center;
+}
+.right-detailInfo .down-orderMoney table tbody #ProductNum span{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+.right-detailInfo .down-orderMoney table tbody #ProductNum strong{
+    border: 1px solid yellow;
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+
+.right-detailInfo .down-orderMoney table tbody #ProductNum .number{
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    width: 14px;
+    height: 16px;
+    background: #9da8c7;
+    color: white;
+    vertical-align: top;
+    border: 1px solid yellow;
+
+}
+/*最下方的钱数*/
+.right-detailInfo  .total-money-box{
+    position: absolute;
+    top: 117px;
+    text-align: right;
+    right: 0;
+
+}
+.right-detailInfo  .total-money-box .total-money {
+    display: inline-block;
+    text-align: left;
+    color: #5F5F5F;
+    font-size: 16px;
+    width: 166px;
+}
+
+.right-detailInfo  .total-money-box .total-money p {
+    margin-bottom:2px;
+}
+.right-detailInfo  .total-money-box .total-money p .rightMoney{
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+}
+.right-detailInfo  .total-money-box .total-money p .final-money {
+    color: red;
+    font-size: 16px;
+}
+
+.right-detailInfo  .total-money-box .total-money .submitOrder-btn {
+    position: absolute;
+    right: 0;
+    margin-top: 12px;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    background: #f6c63e;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+}
+
+
+
+

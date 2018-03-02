@@ -1,0 +1,69 @@
+
+/*扶贫生态馆*/
+.biodome-info{
+    height: 178px;
+    width: 791px;
+    background: #f0f2fa;
+    position: absolute;
+    top: 143px;
+    left: 355px;
+}
+.biodome-info .biodome-headerImg img{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 120px;
+    height: 120px;
+
+}
+.biodome-info .biodome-describe{
+    position: absolute;
+    top: 8px;
+    left: 140px;
+    width: 640px;
+    height: 125px;
+}
+.biodome-info .biodome-describe p:nth-child(1){
+    color:#4A4A4A ;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.biodome-info  .tabs{
+    position: absolute;
+    left: 7px;
+    top: 133px;
+    width: 300px;
+    height: 35px;
+}
+.biodome-info  .tabs img{
+    width: 130px;
+    height: 35px;
+    margin-right:3px;
+}
+/*下半部分*/
+.goods-container{
+    position: absolute;
+    top: 326px;
+    left: 350px;
+    width: 795px;
+    height: 354px;
+}
+.biodome-des-box .left-smallImg-show img{
+    position: absolute;
+    width: 170px;
+    height: 80px;
+}
+
+/*生态产品*/
+.goods-container .product-list{
+    display: none;
+    height: 243px;
+}
+.goods-container .product-list img{
+    position: absolute;
+    width: 186px;
+    height: 172px;
+}

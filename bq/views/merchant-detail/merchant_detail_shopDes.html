@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>商家页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="page-view-size" content="640*530">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="../../css/global/alert.css">
+    <link rel="stylesheet" href="../../css/merchant-detail-shopDes.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 530px;
+            width: 640px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <!--头部-->
+    <div class="header">
+        <img style="position: absolute ; left: 60px; top: 26px;  width: 33px;height: 40px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ;  left: 100px; top: 25px;  width: 50px;height: 25px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p style="position: absolute;left: 100px; top: 51px; height:21px;line-height: 21px;width: 220px;color: white">
+            客服电话：12345678</p>
+        <marquee
+                style="position: absolute;right: 105px; top: 45px; width: 160px; height: 23px;line-height: 23px ;color: white"
+                scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+        <img class="menu-item" src="../../img/user.png" style="position: absolute;right: 65px; top: 30px;  width: 28px;height: 36px;"
+             alt="">
+    </div>
+
+
+
+    <!--商家详情介绍区域-->
+    <div class="merchant-box">
+
+        <div class="merchant-info"><!--商家信息上半部分-->
+            <div class="merchant-headerImg">
+                <img id="sellerHeaderImg" src="../../img/noProduct.png" alt="">
+            </div>
+            <div class="merchant-describe">
+                <p id="sellerName" class="merchant-name"></p>
+                <!--<p id="sellerType" style="display: none">翼支付入驻商家</p>-->
+                <p id="sellerType" style="display: none"></p>
+                <p >商家介绍：<span id="sellerIntroduce"></span></p>
+                <p >地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：<span id="sellerAddress"></span></p>
+            </div>
+
+            <div class="tabs">
+                <img class=" merchant-tab menu-item" src="../../img/shangJia.png" alt="">
+                <img class=" goods-tab menu-item" src="../../img/shangPin.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="goods-container"><!--商品展示-->
+            <div class="merchant-des-box" ><!--商家介绍区-->
+                <div class="left-smallImg-show common">
+                    <img style="left: 20px;top: 10px;" class="item menu-item  sellerInfoImg" src="../../img/noProduct.png"
+                         alt="">
+                    <img style="left: 20px;top: 110px;" class="item menu-item  sellerInfoImg" src="../../img/noProduct.png"
+                         alt="">
+                    <img style="left: 132px;top: 10px;" class="item menu-item  sellerInfoImg" src="../../img/noProduct.png"
+                         alt="">
+                    <img style="left: 132px;top: 110px;" class="item menu-item  sellerInfoImg" src="../../img/noProduct.png"
+                         alt="">
+                </div>
+                <div class="menu-item right-bigImg-show" id="videoOrImg">
+                    <iframe id="plyIfr" name="plyIfr" style="position: absolute; left: 0;top: 0;" src=""
+                            width="520px" height="265px" scrolling="no" frameborder="0"></iframe>
+                    <img class="bigImg sellerInfoImg" id="bigImg" style="display: none" src="../../img/noProduct.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="product-list" style="display: none" ><!--商品列表区-->
+                <img style="left: 20px; top: 10px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 116px; top: 10px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 212px; top: 10px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 308px; top: 10px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 405px; top: 10px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+
+                <img style="left: 20px;  top: 110px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 116px; top: 110px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 212px; top: 110px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 308px; top: 110px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+                <img style="left: 405px; top: 110px;" class="item menu-item  productListImg" src="../../img/noProduct.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--提示信息弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+        </div>
+    </div>
+</div>
+
+<script src="../../js/public/Util.js"></script>
+<script src="../../js/public/video.js"></script>
+<script src="../../js/merchant-detail-shopDes.js"></script>
+
+</body>
+</html>

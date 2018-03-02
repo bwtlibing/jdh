@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html >
+<head>
+    <title>特惠卖场</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="page-view-size" content="640*530">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <!--<link rel="stylesheet" href="css/indexTest.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 530px;
+            width: 640px;
+            margin: 0 auto;
+            background: url("../../img/back.png") no-repeat;
+            background-size: cover;
+        }
+        .btn li{
+            display: inline-block;
+            color: white;
+            width: 5px;
+            height: 7px;
+            margin-right: 3px;
+            background-color: darkgray;
+        }
+        .btn .active{
+            background:white;
+            /*background:red;*/
+        }
+
+        /*翻页的样式*/
+        .page-turn{
+            text-align: right;
+
+            width: 400px;
+        }
+        .page-turn span {
+            text-align: center;
+            margin-right: 1%;
+        }
+        .page-turn .up-page ,.page-turn .down-page{
+            background-color: #169bd5;
+            padding: 2px 5px;
+            display: inline-block;
+            color: white;
+            /* border-radius: 4px; */
+            font-size: 16px;
+        }
+
+        .page-turn .middle{
+            color: white;
+            font-size: 16px;
+            /*vertical-align: middle;*/
+        }
+
+        .page-turn  .current-page{
+            text-align: center;
+            color: white;
+            font-size:17px;
+            margin-right: 0;
+        }
+
+        /*弹出框*/
+        .alertModal{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.7);
+        }
+        .alert-modal-content{
+            display: block;
+            width: 600px;
+            height: 400px;
+            margin: 200px auto;
+            border-radius:10px;
+            overflow: auto;
+            background: url("../../img/alert.png") no-repeat;
+            background-size: 100% 100%;
+
+            text-align: center;
+        }
+        .alert-modal-content .detailInfo{
+
+            padding: 220px 40px 80px;
+            font-size: 26px;
+        }
+        /*商品图片展示信息*/
+        .Featured .another ul li .product-info{
+            position: absolute;
+            background: white;
+            height: 38px;
+            line-height: 38px;
+            width: 100%;
+            left: 3px;
+            bottom: -3px;
+
+        }
+        .Featured .another ul li .product-info .product-name{
+            text-align: left;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        .Featured .another ul li .product-info .product-price{
+            text-align: right;
+            margin-right: 10px;
+            color: red;
+            font-size: 16px;
+            float: right;
+            margin-top: 2px;
+        }
+        .Featured .another ul li .top-img{
+            position: absolute;
+            display: none;
+            width: 25px;
+            height: 36px;
+            right: -3px;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <!--头部-->
+    <div class="header">
+
+        <img style="position: absolute ; left: 60px; top: 26px;  width: 33px;height: 40px; " src="../../img/logo.png" alt="">
+        <img style="position: absolute ;  left: 100px; top: 25px;  width: 50px;height: 25px;"
+             src="../../img/indexImg/yiShangCheng.png" alt="">
+        <p class="title"  style="position: absolute ; left: 280px; top:42px;  width: 100px;height: 28px; color: white;font-size: 22px">特惠卖场</p>
+        <p style="position: absolute;left: 100px; top: 51px; height:21px;line-height: 21px;width: 220px;color: white">
+            客服电话：12345678</p>
+        <marquee
+                style="position: absolute;right: 105px; top: 45px; width: 160px; height: 23px;line-height: 23px ;color: white"
+                scrollamount="3" direction="left">
+            火热促销中，全场商品9折起！
+        </marquee>
+        <img class="menu-item" src="../../img/user.png" style="position: absolute;right: 50px; top: 30px;  width: 28px;height: 36px;"
+             alt="">
+    </div>
+
+    <!--菜单按钮-->
+    <div class="menu-list">
+        <img class="menu-item menu-img" src="../../img/special-stores-img/shouYeActive.png"
+             style="position: absolute;left: 55px; top: 100px; display: block; width: 92px;height: 40px;" alt="">
+        <img class="menu-item menu-img" src="../../img/special-stores-img/jingPin.png"
+             style="position: absolute;left: 55px; top: 162px; display: block; width: 92px;height: 40px;" alt="">
+        <img class="menu-item menu-img" src="../../img/special-stores-img/benDi.png"
+             style="position: absolute;left: 55px; top: 224px; display: block; width: 92px;height: 40px;" alt="">
+        <img class="menu-item menu-img" src="../../img/special-stores-img/youLe.png"
+             style="position: absolute;left: 55px; top:286px; display: block; width: 92px;height: 40px;" alt="">
+        <img class="menu-item menu-img" src="../../img/special-stores-img/yongPin.png"
+             style="position: absolute;left: 55px; top: 349px; display: block; width: 92px;height: 40px;" alt="">
+        <img class="menu-item menu-img" src="../../img/special-stores-img/foot.png"
+             style="position: absolute;left: 55px; top: 409px; display: block; width: 92px;height: 40px;" alt="">
+    </div>
+
+
+    <!--推荐位-->
+    <div class="Featured">
+        <!--特惠首页-->
+        <div class="shouYe index" style="display: inline-block">
+            <!--轮播图-->
+            <div class="slide-show" style="position: absolute;left: 154px; top: 100px;">
+                <div class="menu-item" style="width: 285px; height: 210px">
+                    <ul class="list" id="slide">
+                       <!-- <li><img style=" position: absolute;width: 282px; height: 210px" class="slide-img"
+                                 src="../../img/special-stores-img/slide.png" alt=""/></li>-->
+                        <!--<li><img style=" position: absolute;width: 580px; height: 280px" class="slide-img"
+                                 src="../../img/special-stores-img/slide.png" alt=""/></li>
+                        <li><img style=" position: absolute;width: 580px; height: 280px" class="slide-img"
+                                 src="../../img/special-stores-img/slide.png" alt=""/></li>
+                        <li><img style=" position: absolute;width: 580px; height: 280px" class="slide-img"
+                                 src="../../img/special-stores-img/slide.png" alt=""/></li>-->
+                    </ul>
+                </div>
+                <ul id="slideBtn" style="position: absolute;left: 200px;top: 180px;width: 50px;" class="btn">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!--右部视频区域或图片-->
+            <div class="menu-item" style="position: absolute;left: 440px; top: 100px; height: 130px;width:150px ">
+                <iframe id="plyIfr" name="plyIfr" style="position: absolute" src="" width="150px" height="130px"
+                        scrolling="no"
+                        frameborder="0"></iframe>
+                <img class="img-item " style="position: absolute ;display: block; width: 150px;height: 130px" id="bigImg"
+                     src="../../img/special-stores-img/slide.png" alt="">
+            </div>
+
+            <img class="rightSmallImg menu-item" style="position: absolute;left: 440px; top: 236px; width:150px; height: 73px" src="http://sx.iptv.bwton.com/resource/iptv/img/admin/20171114/0d616a4e-9b7d-4a13-8fa6-c363d7036ee9.png" alt="">
+
+
+            <!--底部-->
+            <!--底部大图-->
+            <img class="bottomBigImg menu-item" style="position: absolute;left: 154px; top: 318px; width:170px; height: 130px" src="http://sx.iptv.bwton.com/resource/iptv/img/admin/20171114/8279629b-9933-4622-af0d-e7a2c40890c5.png" alt="">
+            <img class="bottomBigImg menu-item" style="position: absolute;left: 332px; top: 318px; width:170px; height: 130px"  src="http://sx.iptv.bwton.com/resource/iptv/img/admin/20171114/8279629b-9933-4622-af0d-e7a2c40890c5.png" alt="">
+
+            <!--底部小图-->
+            <img class="bottomSmallImg menu-item" style="position: absolute;left: 510px; top: 318px; width:80px; height: 130px" src="http://sx.iptv.bwton.com/resource/iptv/img/admin/20171114/6d6f33c1-003a-4024-bdaa-4d21fdddfe02.png" alt="">
+
+        </div>
+
+        <div class="another" style="display: none" >
+            <!--<div class="another" style="display: block" >-->
+            <!-- &lt;!&ndash;上一列&ndash;&gt;
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 300px; top: 130px; display: block; width: 200px;height: 200px;" alt="">
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 530px; top: 130px; display: block; width: 200px;height: 200px;" alt="">
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 760px; top: 130px; display: block; width: 200px;height: 200px;" alt="">
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 990px; top: 130px; display: block; width: 200px;height: 200px;" alt="">
+
+             &lt;!&ndash;下一列&ndash;&gt;
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 300px; top: 350px; display: block; width: 200px;height: 200px;" alt="">
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 530px; top: 350px; display: block; width: 200px;height: 200px;" alt="">
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 760px; top: 350px; display: block; width: 200px;height: 200px;" alt="">
+             <img class="menu-item" src="../../img/special-stores-img/dainFanBao.png"
+                  style="position: absolute;left: 990px; top: 350px; display: block; width: 200px;height: 200px;" alt="">-->
+
+            <ul id="productUl">
+                <li style="position: absolute;left: 158px; top: 100px;width: 100px;height: 144px; " class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block;width: 100px;height: 144px;" alt="">
+                    <img  class="top-img" src="../../img/top.png" alt="">
+                    <p   class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+
+                <li  style="position: absolute;left: 268px; top: 100px; display: block;width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+
+                <li  style="position: absolute;left: 378px; top: 100px; display: block; width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+
+                <li  style="position: absolute;left: 488px; top: 100px; display: block;width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+                <!--下一页-->
+                <li  style="position: absolute;left: 158px; top: 260px; display: block; width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+                <li   style="position: absolute;left: 268px; top: 260px; display: block; width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+                <li   style="position: absolute;left: 378px; top: 260px; display: block; width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+                <li  style="position: absolute;left: 488px; top: 260px; display: block; width: 100px;height: 144px;" class="">
+                    <img class="menu-item product-img" src="../../img/special-stores-img/dainFanBao.png"
+                         style="position: absolute;left: 0; top: 0; display: block; width: 100px;height: 144px;" alt="">
+                    <img class="top-img" src="../../img/top.png" alt="">
+                    <p class="product-info">
+                        <span class="product-name"></span>
+                        <span class="product-price"></span>
+                    </p>
+                </li>
+            </ul>
+            <!--翻页按钮-->
+            <p class="page-turn" style="position: absolute;left: 200px; top: 425px;">
+                <span class="up-page menu-item">上一页</span>
+                <span class="middle">第<span class="current-page">1</span>页</span>
+                <span class="down-page menu-item">下一页</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!--弹出框-->
+<div id="alertModal"  class="alertModal" style="display: none">
+    <div class="alert-modal-content">
+        <div class="detailInfo">
+        </div>
+    </div>
+</div>
+<script src="../../js/public/Util.js"></script>
+<script src="../../js/public/video.js"></script>
+<script src="../../js/special-stores.js"></script>
+</body>
+</html>

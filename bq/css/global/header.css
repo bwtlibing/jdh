@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   /* height: 100%;
+    width: 100%;*/
+    height:530px;
+    width: 640px;
+    margin: 0 auto;
+    background: url("../../img/index-img/background-img.png") no-repeat;
+    background-size: cover;
+    color: black;
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+.content{
+    /*padding: 70px 180px 20px 180px;*/
+    /*padding: 30px 120px 20px 120px;*/
+    padding: 15px 3% 10px 3%;
+}
+/*头部样式*/
+.header{
+    position: relative;
+    height: 33px;
+    margin-bottom: 10px;
+}
+.header .logo{
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 3px;
+}
+.header .logo img{
+    width: 25px;
+    height: 35px;
+}
+.header  .title{
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 610px;
+
+}
+.header  .title img{
+    width: 60px;
+    height: 35px;
+}
+.header .go-back{
+    position: absolute;
+    right: 0;
+}
+.header .go-back div{
+    width: 32px;
+    height: 37px;
+}
+.header .go-back div img {
+    width: 30px;
+    display: block;
+    height: 37px;
+
+}
+
+
+
+
+
+
+

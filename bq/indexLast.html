@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>测试首页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="page-view-size" content="640*530">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store,no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <!--<link rel="stylesheet" href="css/indexTest.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 530px;
+            width: 640px;
+            margin: 0 auto;
+            background: url("img/index-img/background-img.png") no-repeat;
+            background-size: cover;
+        }
+        .btn li{
+            display: inline-block;
+            color: white;
+            width: 10px;
+            height: 10px;
+            margin-right: 2%;
+            background-color: darkgray;
+            border-radius: 50%;
+        }
+        .btn .active{
+            background:white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div class="header">
+        <img  style="position: absolute ;top: 10px;  width: 25px;height: 35px; " src="img/index-img/logo.png" alt="">
+        <img  style="position: absolute ; left: 33px;top: 10px; width: 60px;height: 35px;" src="img/index-img/yiShangCheng.png" alt="">
+    </div>
+    <ul class="menu-list">
+        <li class="menu-item" style="position: absolute; left: 33px; top: 60px;" >
+            <img src="img/index-img/yiShangQuan.png" style=" display: block; width: 85px;height: 40px;" alt="">
+        </li>
+        <li class="menu-item" style="position: absolute ;left: 163px; top: 60px;" >
+
+            <img src="img/index-img/yiZhiFu.png" style=" display: block; width: 85px;height: 40px;" alt="">
+
+        </li>
+        <li class="menu-item" style="position: absolute;left: 300px; top: 60px;" >
+
+            <img src="img/index-img/teHui.png" style=" display: block; width: 85px;height: 40px;" alt="">
+
+        </li>
+        <li class="menu-item"  style="position: absolute;left: 440px; top: 60px;">
+            <img src="img/index-img/user.png" style=" display: block; width: 85px;height: 40px;" alt="">
+        </li>
+        <li class="menu-item" style="position: absolute;left: 582px; top: 60px;" >
+            <img src="img/index-img/fanHui.png" style=" display: block; width: 35px;height: 40px;" alt="">
+        </li>
+    </ul>
+    <div class="Featured"><!--推荐位-->
+
+        <img  style="position: absolute;left: 33px; top: 120px;width: 86px;height: 310px" id="leftOneImg"
+             class="leftOneImg menu-item" src="img/gao.png" alt="">
+
+        <div class="slide-show" style="position: absolute;left: 130px; top: 120px;">
+            <div class="menu-item" style="width: 220px; height: 190px">
+                <ul class="list" id="slide">
+                    <!--<li><img style=" position: absolute;width: 220px; height: 190px" class="slide-img"
+                             src="img/index-img/heTao.png" alt=""/></li>
+                    <li><img style=" position: absolute;width: 220px; height: 190px" class="slide-img"
+                             src="img/index-img/yueBing.png" alt=""/></li>
+                    <li><img style=" position: absolute;width: 220px; height: 190px" class="slide-img"
+                             src="img/index-img/shiBing.png" alt=""/></li>
+                    <li><img style=" position: absolute;width: 220px; height: 190px" class="slide-img"
+                             src="img/index-img/heTaoCui.png" alt=""/></li>-->
+                </ul>
+            </div>
+             <ul id="slideBtn" style="position: absolute;left: 160px;top: 170px;width: 44px;" class="btn">
+                 <!--<li class="active"></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>-->
+             </ul>
+        </div>
+         <!--中下部-->
+        <img class="middleTwoImg menu-item" style="position: absolute;width: 105px; height: 110px;left: 130px; top: 320px;" src="img/chang.png" alt="">
+        <img class="middleTwoImg menu-item" style="position: absolute;width: 105px; height: 110px;left: 244px; top: 320px;" src="img/chang.png" alt="">
+
+        <!--右部-->
+        <div class="menu-item" style="position: absolute;left: 360px; top: 120px; height: 214px;width:260px ">
+            <iframe id="plyIfr" name="plyIfr" style="position: absolute" src="" width="260px" height="214px" scrolling="no"
+                    frameborder="0"></iframe>
+            <img class="img-item " style="position: absolute ;display: none; width: 260px;height: 214px" id="bigImg"
+                 src="img/chang.png" alt="">
+        </div>
+        <img class="rightTwoImg menu-item" style="position: absolute;left: 360px; top: 342px; width:125px; height: 88px" src="img/chang.png" alt="">
+        <img class="rightTwoImg menu-item" style="position: absolute;left: 494px; top: 342px; width:125px; height: 88px"  src="img/chang.png" alt="">
+    </div>
+    <!--底部信息-->
+    <img style="position: absolute;left: 33px; top: 450px; width: 48px; height: 34px" src="img/index-img/hot.png" alt="">
+    <marquee style="position: absolute;left: 100px; top: 450px; width: 245px; height: 32px;line-height: 34px ;color: white" scrollamount="3" direction="left">
+        火热促销中，全场商品9折起！
+    </marquee>
+    <p style="position: absolute;left: 369px; top: 450px; height:34px;line-height: 34px;width: 248px;text-align: right;color: white">客服电话：12345678</p>
+</div>
+<script src="js/public/Util.js"></script>
+<script src="js/public/video.js"></script>
+<script src="js/indexLast.js"></script>
+</body>
+</html>
